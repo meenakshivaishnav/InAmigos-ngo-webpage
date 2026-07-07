@@ -1,0 +1,585 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8f9fa;
+    color:#333;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.section{
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:38px;
+    color:#2e8b57;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    color:#666;
+    max-width:700px;
+    margin:auto;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    z-index:1000;
+}
+
+.navbar{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    height:80px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:50px;
+    height:50px;
+}
+
+.logo h2{
+    color:#2e8b57;
+    font-size:24px;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#2e8b57;
+}
+
+.nav-btn{
+    text-decoration:none;
+    background:#2e8b57;
+    color:white;
+    padding:12px 24px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.nav-btn:hover{
+    background:#256d46;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),
+    rgba(0,0,0,.55)),
+    url("images/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.hero-content{
+
+    max-width:800px;
+
+}
+
+.hero h1{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    margin-bottom:35px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn-primary{
+
+    background:#2e8b57;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    background:#256d46;
+
+}
+
+.btn-secondary{
+
+    border:2px solid white;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+}
+
+.btn-secondary:hover{
+
+    background:white;
+
+    color:#2e8b57;
+
+}
+
+/* ==========================
+   ABOUT
+========================== */
+
+.about-content{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    border-radius:15px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+.about-text h3{
+
+    color:#2e8b57;
+
+    margin-bottom:20px;
+
+    font-size:32px;
+
+}
+
+.about-text p{
+
+    margin-bottom:20px;
+
+}
+
+.mission-box{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+    margin-top:30px;
+
+}
+
+.mission{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.mission h4{
+
+    color:#2e8b57;
+
+    margin-bottom:10px;
+
+}
+
+/* ==========================
+   PROJECTS
+========================== */
+
+.project-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.project-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.project-card img{
+
+    width:100%;
+
+    height:230px;
+
+    object-fit:cover;
+
+}
+
+.project-content{
+
+    padding:25px;
+
+}
+
+.project-content h3{
+
+    color:#2e8b57;
+
+    margin-bottom:15px;
+
+}
+
+/* ==========================
+   IMPACT SECTION
+========================== */
+
+.impact{
+    background:#2e8b57;
+    color:white;
+}
+
+.impact .section-title h2,
+.impact .section-title p{
+    color:white;
+}
+
+.impact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.impact-card{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(5px);
+    padding:40px 20px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.impact-card:hover{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,0.25);
+}
+
+.impact-card h3{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.impact-card p{
+    font-size:18px;
+}
+
+
+/* ==========================
+   GALLERY
+========================== */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.4s;
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+}
+
+
+/* ==========================
+   VOLUNTEER
+========================== */
+
+.volunteer{
+    background:linear-gradient(135deg,#2e8b57,#4CAF50);
+    color:white;
+}
+
+.volunteer-content{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+
+.volunteer-content h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.volunteer-content p{
+    font-size:18px;
+    margin-bottom:35px;
+}
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    background:#222;
+    color:white;
+    padding:60px 0 25px;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+}
+
+.footer-container h3{
+    margin-bottom:15px;
+    color:#4CAF50;
+}
+
+.footer-container p{
+    color:#ddd;
+}
+
+footer hr{
+    margin:40px 0 20px;
+    border:0;
+    border-top:1px solid #444;
+}
+
+.footer-note{
+    text-align:center;
+    color:#bbb;
+    font-size:14px;
+    padding:0 20px;
+}
+
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+@media (max-width:992px){
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        padding:20px 0;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+        margin:20px 0;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .about-content{
+        grid-template-columns:1fr;
+    }
+
+    .mission-box{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .section{
+        padding:60px 0;
+    }
+
+    .hero{
+        padding:0 20px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .nav-btn{
+        width:220px;
+        text-align:center;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .volunteer-content h2{
+        font-size:32px;
+    }
+
+}
+
+@media (max-width:500px){
+
+    .logo h2{
+        font-size:18px;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .impact-card h3{
+        font-size:32px;
+    }
+
+}
